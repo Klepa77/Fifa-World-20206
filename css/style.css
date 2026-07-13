@@ -1,3 +1,26 @@
+@font-face {
+  font-family: 'GeistMono';
+  src: url('../fonts/GeistMono-VariableFont_wght.ttf') format('truetype');
+  font-weight: 100 900;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'GeistMono';
+  src: url('../fonts/GeistMono-Italic-VariableFont_wght.ttf') format('truetype');
+  font-weight: 100 900;
+  font-style: italic;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'TiltWarp';
+  src: url('../fonts/TiltWarp-Regular-VariableFont.ttf') format('truetype');
+  font-weight: 100 900;
+  font-style: normal;
+  font-display: swap;
+}
 html {
   box-sizing: border-box;
 }
@@ -6,7 +29,9 @@ html {
 *::after,
 *::before {
   box-sizing: inherit;
+
 }
+
 
 a {
   color: inherit;
@@ -22,4 +47,47 @@ button {
   padding: 0;
   border: 0;
   cursor: pointer;
+}
+
+body{
+	color:#D6F1CA;
+	font-size: 20px;
+	line-height: 1.2;
+	font-weight: 600;
+	font-family: 'TiltWarp', sans-serif;
+	font-family: 'GeistMono',monospace;
+}
+
+.container{
+	max-width: 1740px;
+	padding-right:100px;
+	padding-left: 100px;
+	margin: 0 auto;
+
+}
+.header{
+	background-color:#191919;
+}
+
+.header-inner{
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	padding-top: 50px;
+    padding-bottom: 50px;
+
+}
+
+.menu-list{
+	display: flex;
+	gap: 5px;
+}
+
+.menu-link{
+	padding: 10px;
+	display: inline block;
+	background-color:rgb(255, 255, 255, .1);
+	font-size: 16px;
+	text-transform: uppercase;
+
 }
